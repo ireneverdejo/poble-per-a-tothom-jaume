@@ -12,10 +12,21 @@
   <header class="topbar">
     <nav class="navbar">
       <div class="nav-brand">
+         <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+            <img src="img/urv-centrat-color.png" alt="Universitat Rovira i Virgili" class="logo-img">
+            <span class="nav-brand-text">Poble per a tothom</span>
+            </a>
+    </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Obrir menú">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
         <span>Poble per a tothom</span>
         <small>Accessibilitat als Pallaresos</small>
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inici</a></li>
         <li><a href="membres.html">Membres</a></li>
         <li><a href="#propostes">Propostes</a></li>
@@ -26,6 +37,15 @@
         🌙
       </button>
     </nav>
+    <!-- menú mob x si un cas, amagat-->
+    <div class="mobile-menu" id="mobileMenu">
+    <a href="#context" class="mobile-link">Context</a>
+    <a href="#metode" class="mobile-link">Mètode</a>
+    <a href="#mapa" class="mobile-link">Mapa</a>
+    <a href="membres.html" class="mobile-link">Membres</a>
+    <a href="#propostes" class="mobile-link">Propostes</a>
+    <a href="#contacte" class="mobile-link">Contacte</a>
+  </div>
   </header>
 
   <main>
@@ -108,7 +128,7 @@
   </header>
 
   <div class="tabs-container">
-    <!-- PESTANYES -->
+    <!-- pestanyes -->
     <div class="tabs-nav">
       <button class="tab-btn active" data-tab="senyalitzacio">Senyalització</button>
       <button class="tab-btn" data-tab="semafor">Semàfors</button>
@@ -116,9 +136,7 @@
       <button class="tab-btn" data-tab="aparcament">Aparcament</button>
     </div>
 
-    <!-- CONTINGUT PESTANYES -->
     <div class="tabs-content">
-      <!-- PESTANYA 1 -->
       <div class="tab-panel active" id="senyalitzacio">
         <div class="tab-view active" data-view="text">
           <div class="proposal-icon"><span>🚏</span></div>
@@ -131,7 +149,6 @@
         </div>
       </div>
 
-      <!-- PESTANYA 2 -->
       <div class="tab-panel" id="semafor">
         <div class="tab-view active" data-view="text">
           <div class="proposal-icon"><span>🚦</span></div>
@@ -144,7 +161,6 @@
         </div>
       </div>
 
-      <!-- PESTANYA 3 -->
       <div class="tab-panel" id="voreres">
         <div class="tab-view active" data-view="text">
           <div class="proposal-icon"><span>🚶</span></div>
@@ -157,7 +173,6 @@
         </div>
       </div>
 
-      <!-- PESTANYA 4 -->
       <div class="tab-panel" id="aparcament">
         <div class="tab-view active" data-view="text">
           <div class="proposal-icon"><span>P</span></div>
@@ -171,13 +186,13 @@
       </div>
     </div>
 
-    <!-- BOTONS CANVI VISTA -->
     <div class="tab-toggle">
       <button class="toggle-btn active" data-view="text">📝 Descripció</button>
       <button class="toggle-btn" data-view="image">🖼️ Exemple</button>
     </div>
   </div>
 </section>
+
     <!-- resultats i etc -->
 <section id="analisi" class="section">
   <header class="section-header">
@@ -305,7 +320,7 @@
 
   <footer class="footer">
     <p>Treball de geografia · Accessibilitat als Pallaresos · Curs 2025‑26</p>
-    <p>Autoria: Nom de l’alumne/a · Centre</p>
+    <p>&copy; Jaume Rius de la Yglesia 2025.</p>
   </footer>
 
   <script src="script.js"></script>
