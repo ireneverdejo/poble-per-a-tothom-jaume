@@ -26,7 +26,7 @@ if (form) {
     form.reset();
   });
 }
-// Pestanyes propostes
+// propostes
 const tabBtns = document.querySelectorAll('.tab-btn');
 const tabPanels = document.querySelectorAll('.tab-panel');
 const toggleBtns = document.querySelectorAll('.toggle-btn');
@@ -36,7 +36,6 @@ tabBtns.forEach(btn => {
   btn.addEventListener('click', () => {
     const targetTab = btn.dataset.tab;
     
-    // Activar pestanya
     tabBtns.forEach(b => b.classList.remove('active'));
     tabPanels.forEach(p => p.classList.remove('active'));
     btn.classList.add('active');
@@ -58,6 +57,34 @@ toggleBtns.forEach(btn => {
         view.classList.add('active');
       }
     });
+  });
+});
+//navegador
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+const navLinks = document.getElementById('navLinks');
+
+if (menuToggle && mobileMenu) {
+  menuToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    document.body.classList.toggle('menu-open');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!navbar.contains(e.target)) {
+      mobileMenu.classList.remove('active');
+      menuToggle.classList.remove('active');
+      document.body.classList.remove('menu-open');
+    }
+  });
+}
+
+document.querySelectorAll('.mobile-link').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    menuToggle.classList.remove('active');
+    document.body.classList.remove('menu-open');
   });
 });
 
