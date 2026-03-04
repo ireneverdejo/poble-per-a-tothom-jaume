@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Poble per a tothom · Accessibilitat als Pallaresos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="Projecte de geografia sobre l’accessibilitat i la mobilitat a peu al centre dels Pallaresos, amb especial atenció als passos de vianants.">
+  <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+  <header class="topbar">
+    <nav class="navbar">
+      <div class="nav-brand">
+        <span>Poble per a tothom</span>
+        <small>Accessibilitat als Pallaresos</small>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="#propostes">Propostes</a></li>
+        <li><a href="mapa_interactiu.html">Mapa Interactiu</a></li>
+        <li><a href="#contacte">Contacte</a></li>
+      </ul>
+      <button id="themeToggle" class="nav-btn" aria-label="Canvia el tema de color">
+        🌙
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titol-principal">
+      <div class="hero-text">
+        <p class="hero-kicker">Un poble per a tothom</p>
+        <h1 id="titol-principal">
+          Accessibilitat i mobilitat a peu al centre dels <span>Pallaresos</span>
+        </h1>
+        <p class="hero-desc">
+          Aquest projecte vol analitzar l’accessibilitat i la mobilitat a peu al centre dels
+          Pallaresos, amb especial atenció als passos per a vianants. A partir de l’observació
+          directa i l’anàlisi cartogràfica, detectem punts forts i febles del municipi i
+          proposem millores per garantir un entorn segur i accessible per a totes les persones.
+        </p>
+        <div class="hero-tags">
+          <span class="tag">Accessibilitat</span>
+          <span class="tag">Mobilitat a peu</span>
+          <span class="tag">Passos de vianants</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#mapa" class="btn btn-primary">Veure el mapa de l’estudi</a>
+          <a href="#propostes" class="btn btn-ghost">Anar a les propostes</a>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Resum de l’estudi">
+        <h2>Què volem respondre?</h2>
+        <ul>
+          <li>És còmode i segur moure’s a peu pel centre dels Pallaresos?</li>
+          <li>Els passos de vianants estan ben situats i senyalitzats?</li>
+          <li>Quins punts són problemàtics per a infants, gent gran o persones amb mobilitat reduïda?</li>
+        </ul>
+        <div class="hero-map">
+          
+          <p class="hero-map-caption">
+            Esquema simplificat dels principals passos de vianants del centre.
+          </p>
+        </div>
+      </aside>
+    </section>
+
+    <!-- detallets del proj -->
+    <section id="context" class="section">
+      <header class="section-header">
+        <h2>Resum i detalls del Projecte</h2>
+        <p>En que es basa el projecte i quins son els detalls corresponents</p>
+      </header>
+      <div class="section-grid">
+        <article class="card">
+          <h3>Resum</h3>
+          <p>
+            El projecte se centra en estudiar l'accessibilitat urbana mitjançant l’anàlisi dels passos per a vianants al centre del poble. 
+            Hem utilitzat un mapa base creat amb eines digitals.
+        </p> 
+            <p>A través d’aquest estudi, volem aportar una mirada crítica i constructiva sobre la qualitat de l’espai públic i la seva adaptació a les necessitats de tothom.</p>
+       
+          
+        </article>
+        <article class="card">
+          <h3>Objectius del projecte</h3>
+          <ul>
+        <li><strong>Referència:</strong> XXX-XXXXX-XXX</li>
+        <li><strong>Investigador principal:</strong> Jaume Rius de la Yglesia</li>
+        <li><strong>Entitat:</strong> Universitat Rovira i Virgili</li>
+        <li><strong>Centre:</strong> Facultat de Turisme i Geografia</li>
+        <li><strong>Títol:</strong> Un Poble per a Tothom</li>
+        <li><strong>Duració:</strong> 2 anys (2024-2026)</li>
+        <li><strong>Paraules clau:</strong> Accessibilitat urbana, mobilitat a peu, inclusió, espai públic, urbanisme sostenible.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- millores -->
+   <section id="propostes" class="section proposals-tabs">
+  <header class="section-header">
+    <h2>Propostes de millora</h2>
+    <p>Clica sobre cada pestanya per veure la descripció o exemple visual</p>
+  </header>
+
+  <div class="tabs-container">
+    <!-- PESTANYES -->
+    <div class="tabs-nav">
+      <button class="tab-btn active" data-tab="senyalitzacio">Senyalització</button>
+      <button class="tab-btn" data-tab="semafor">Semàfors</button>
+      <button class="tab-btn" data-tab="voreres">Voreres</button>
+      <button class="tab-btn" data-tab="aparcament">Aparcament</button>
+    </div>
+
+    <!-- CONTINGUT PESTANYES -->
+    <div class="tabs-content">
+      <!-- PESTANYA 1 -->
+      <div class="tab-panel active" id="senyalitzacio">
+        <div class="tab-view active" data-view="text">
+          <div class="proposal-icon"><span>🚏</span></div>
+          <h3>SENYALITZACIÓ I PASSOS ACCESSIBLES</h3>
+          <p>Instal·lació de mobiliari accessible per a persones amb discapacitat, així com passos de vianants amb paviment especial i relleu per facilitar l’orientació de persones amb discapacitat visual.</p>
+        </div>
+        <div class="tab-view" data-view="image">
+          <img src="img/mv.png" alt="Exemple de pas de vianants accessible">
+          <p class="image-caption">Exemple de paviment podotàctil accessible</p>
+        </div>
+      </div>
+
+      <!-- PESTANYA 2 -->
+      <div class="tab-panel" id="semafor">
+        <div class="tab-view active" data-view="text">
+          <div class="proposal-icon"><span>🚦</span></div>
+          <h3>SEMÀFORS INTEL·LIGENTS</h3>
+          <p>Instal·lació de semàfors amb sensors de moviment que ampliïn automàticament el temps de pas per a persones grans o amb mobilitat reduïda. Incorporació de senyals audibles amb volum regulable i vibració per facilitar el creuament a persones amb discapacitat auditiva.</p>
+        </div>
+        <div class="tab-view" data-view="image">
+          <img src="img/semafors.png" alt="Semàfor inclusiu amb sensors">
+          <p class="image-caption">Semàfor amb sensors de moviment</p>
+        </div>
+      </div>
+
+      <!-- PESTANYA 3 -->
+      <div class="tab-panel" id="voreres">
+        <div class="tab-view active" data-view="text">
+          <div class="proposal-icon"><span>🚶</span></div>
+          <h3>AMPLIACIÓ DE VORERES</h3>
+          <p>En alguns trams, les voreres són massa estretes o tenen obstacles. Proposem ampliar-les i eliminar-ne els elements innecessaris per garantir un pas segur i còmode per a tothom, especialment persones amb mobilitat reduïda i infants.</p>
+        </div>
+        <div class="tab-view" data-view="image">
+          <img src="img/vorerapng.png" alt="Vorera ampliada sense obstacles">
+          <p class="image-caption">Vorera ampliada i lliure d'obstacles</p>
+        </div>
+      </div>
+
+      <!-- PESTANYA 4 -->
+      <div class="tab-panel" id="aparcament">
+        <div class="tab-view active" data-view="text">
+          <div class="proposal-icon"><span>P</span></div>
+          <h3>APARCAMENTS ADAPTATS</h3>
+          <p>Places ampliades per a persones amb discapacitat prop dels equipaments principals.</p>
+        </div>
+        <div class="tab-view" data-view="image">
+          <img src="img/mv aparcament.png" alt="Aparcament adaptat">
+          <p class="image-caption">Places d’aparcament ampliades per a vehicles, bicicletes adaptades i patinets elèctrics, amb punts de càrrega i suports estabilitzadors. També es preveu la instal·lació d'il·luminació intel·ligent amb sensors de moviment per millorar la seguretat nocturna, aixi com una opció de reserva via app per garantir accessibilitat prioritària.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTONS CANVI VISTA -->
+    <div class="tab-toggle">
+      <button class="toggle-btn active" data-view="text">📝 Descripció</button>
+      <button class="toggle-btn" data-view="image">🖼️ Exemple</button>
+    </div>
+  </div>
+</section>
+    <!-- resultats i etc -->
+<section id="analisi" class="section">
+  <header class="section-header">
+    <h2>Resultats de l'estudi</h2>
+    <p>Anàlisi exhaustiva del nucli urbà dels Pallaresos</p>
+  </header>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">35%</div>
+      <p>Passos de vianants accessibles</p>
+    </div>
+    <div class="stat-card warn">
+      <div class="stat-number">65%</div>
+      <p>Amb obstacles significatius</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">20%</div>
+      <p>Semàfors inclusius</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">13</div>
+      <p>Passos a adaptar</p>
+    </div>
+  </div>
+
+  <div class="section-grid">
+    <!-- forts -->
+    <article class="card highlight">
+      <h3>✅ Punts forts</h3>
+      <ul class="check-list">
+        <li><strong>35%</strong> dels passos compleixen estàndards d'accessibilitat</li>
+        <li>Presència de voreres en la majoria de carrers principals</li>
+        <li>Concentració d'equipaments al centre (escola, comerços, serveis)</li>
+      </ul>
+    </article>
+
+    <!-- febl -->
+    <article class="card warn highlight">
+      <h3>⚠️ Punts febles</h3>
+      <ul class="warn-list">
+        <li><strong>65%</strong> dels passos tenen obstacles (rampes, desnivells >3cm)</li>
+        <li>Només <strong>20%</strong> dels semàfors són inclusius</li>
+        <li>Voreres estretes en zones de gran trànsit de vianants</li>
+      </ul>
+    </article>
+  </div>
+
+  <div class="proposal-phases">
+    <h3>Plà d'actuació propost</h3>
+    <div class="phase-grid">
+      <div class="phase-card">
+        <div class="phase-badge">Fase 1</div>
+        <h4>Mitjà termini (1 any)</h4>
+        <ul>
+          <li>Ampliar voreres més estretes</li>
+          <li>Instal·lar 5 semàfors inclusius</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-badge">Fase 2</div>
+        <h4>Llarg termini (2 anys)</h4>
+        <ul>
+          <li>Adaptar els 13 passos no accessibles</li>
+          <li>Millorar pàrquing adaptat</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+<section id="contacte" class="section">
+  <header class="section-header">
+    <h2>Contacta'ns</h2>
+    <p>"El teu punt de vista és clau per fer del poble un lloc més accessible. Escriu-nos les teves idees, dubtes o propostes de millora. Junts podem transformar els espais públics"!</p>
+  </header>      
+ <div class="contact-container">
+    <!-- form-->
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label for="nom">Nom complet</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Correu electrònic</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="missatge">Missatge</label>
+        <textarea id="missatge" name="missatge" rows="5" required 
+          placeholder="Explica'ns la teva consulta o suggeriment..."></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary full-width">
+        Enviar missatge
+      </button>
+    </form>
+
+      <!-- dades -->
+<div class="contact-info">
+  <h3>Dades de contacte</h3>
+    <ul class="contact-list">
+    <li class="contact-item icon solid fa-home">
+      Vila-seca<br />
+      Carrer de Joanot Martorell, 15<br />
+      43840 Vila-seca, Tarragona
+    </li>
+    <li class="contact-item icon solid fa-phone">977 29 79 00</li>
+    <li class="contact-item icon solid fa-envelope">
+      <a href="mailto:unpobleperatothom@gmail.com">unpobleperatothom@gmail.com</a>
+    </li>
+    <li class="contact-item icon brands fa-twitter">
+      <a href="https://twitter.com/unpobleperatothom" target="_blank">twitter.com/unpobleperatothom</a>
+    </li>
+    <li class="contact-item icon brands fa-facebook-f">
+      <a href="https://facebook.com/unpobleperatothom" target="_blank">facebook.com/unpobleperatothom</a>
+    </li>
+    <li class="contact-item icon brands fa-instagram"data-hover-img="img/insta.jpg">
+      <a href="https://instagram.com/unpobleperatothom" target="_blank">instagram.com/unpobleperatothom</a>
+    </li>
+  </ul>
+</div>
+
+  <footer class="footer">
+    <p>Treball de geografia · Accessibilitat als Pallaresos · Curs 2025‑26</p>
+    <p>Autoria: Nom de l’alumne/a · Centre</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
