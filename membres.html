@@ -10,19 +10,40 @@
   <header class="topbar">
     <nav class="navbar">
       <div class="nav-brand">
-        <span>Poble per a tothom</span>
-        <small>Accessibilitat als Pallaresos</small>
+         <div class="nav-left">
+            <a href="index.html" class="nav-logo">
+            <img src="img/urv-centrat-color.png" alt="Universitat Rovira i Virgili" class="logo-img">
+            <span class="nav-brand-text">Poble per a tothom</span>
+            </a>
+    </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Obrir menú">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inici</a></li>
-        <li><a href="#membres">Membres</a></li>
-        <li><a href="index.html#propostes">Propostes</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="#propostes">Propostes</a></li>
         <li><a href="mapa_interactiu.html">Mapa Interactiu</a></li>
-        <li><a href="index.html#contacte">Contacte</a></li>
+        <li><a href="#contacte">Contacte</a></li>
       </ul>
-      <button id="themeToggle" class="nav-btn" aria-label="Canvia el tema">🌙</button>
+      <button id="themeToggle" class="nav-btn" aria-label="Canvia el tema de color">
+        🌙
+      </button>
     </nav>
+    <!-- menú mob x si un cas,-->
+    <div class="mobile-menu" id="mobileMenu">
+    <a href="#context" class="mobile-link">Context</a>
+    <a href="#metode" class="mobile-link">Mètode</a>
+    <a href="#mapa" class="mobile-link">Mapa</a>
+    <a href="membres.html" class="mobile-link">Membres</a>
+    <a href="#propostes" class="mobile-link">Propostes</a>
+    <a href="#contacte" class="mobile-link">Contacte</a>
+  </div>
   </header>
+
 
   <main>
     <section class="section team expand-hover" id="membres">
