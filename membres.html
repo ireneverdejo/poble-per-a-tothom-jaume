@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="ca">
+
 <head>
   <meta charset="UTF-8">
   <title>Membres · Poble per a tothom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="estils.css">
 </head>
+
 <body>
   <header class="topbar">
     <nav class="navbar">
       <div class="nav-brand">
-         <div class="nav-left">
-            <a href="index.html" class="nav-logo">
+        <div class="nav-left">
+          <a href="index.html" class="nav-logo">
             <img src="img/urv-centrat-color.png" alt="Universitat Rovira i Virgili" class="logo-img">
             <span class="nav-brand-text">Poble per a tothom</span>
-            </a>
-    </div>
+          </a>
+        </div>
         <button class="menu-toggle" id="menuToggle" aria-label="Obrir menú">
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-      <span class="hamburger-line"></span>
-    </button>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inici</a></li>
         <li><a href="membres.html">Membres</a></li>
+        <li><a href="#propostes">Propostes</a></li>
+        <li><a href="mapa_interactiu.html">Mapa Interactiu</a></li>
+        <li><a href="#contacte">Contacte</a></li>
       </ul>
       <button id="themeToggle" class="nav-btn" aria-label="Canvia el tema de color">
         🌙
@@ -32,13 +37,13 @@
     </nav>
     <!-- menú mob x si un cas,-->
     <div class="mobile-menu" id="mobileMenu">
-    <a href="#context" class="mobile-link">Context</a>
-    <a href="#metode" class="mobile-link">Mètode</a>
-    <a href="#mapa" class="mobile-link">Mapa</a>
-    <a href="membres.html" class="mobile-link">Membres</a>
-    <a href="#propostes" class="mobile-link">Propostes</a>
-    <a href="#contacte" class="mobile-link">Contacte</a>
-  </div>
+      <a href="index.html#context" class="mobile-link">Context</a>
+      <a href="index.html#metode" class="mobile-link">Mètode</a>
+      <a href="index.html#mapa" class="mobile-link">Mapa</a>
+      <a href="membres.html" class="mobile-link">Membres</a>
+      <a href="index.html#propostes" class="mobile-link">Propostes</a>
+      <a href="index.html#contacte" class="mobile-link">Contacte</a>
+    </div>
   </header>
 
 
@@ -46,7 +51,7 @@
     <section class="section team expand-hover" id="membres">
       <header class="section-header">
         <h2>Membres de l'equip</h2>
-          <p>Equip encarregat de desenvolupar el projecte d’accessibilitat urbana al nucli del poble.</p>
+        <p>Equip encarregat de desenvolupar el projecte d’accessibilitat urbana al nucli del poble.</p>
       </header>
 
       <div class="team-grid">
@@ -62,7 +67,7 @@
           <div class="team-photo">
             <img src="img/Alex.png" alt="Alex">
           </div>
-                <h3>Alex Sales</h3>
+          <h3>Alex Sales</h3>
           <p class="team-role">Responsable de treball de camp</p>
         </article>
 
@@ -92,4 +97,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
