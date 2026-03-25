@@ -88,3 +88,22 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   });
 });
 
+// Scroll Reveal Animation
+const revealElements = document.querySelectorAll('.section, .card, .stat-card, .team-card, .phase-card');
+
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-visible');
+      revealObserver.unobserve(entry.target);
+    }
+  });
+}, {
+  threshold: 0.1,
+  rootMargin: '0px 0px -50px 0px'
+});
+
+revealElements.forEach(el => {
+  el.classList.add('reveal-hidden');
+  revealObserver.observe(el);
+});
