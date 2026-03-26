@@ -60,6 +60,7 @@ toggleBtns.forEach(btn => {
   });
 });
 //navegador
+const navbar = document.querySelector('.navbar');
 const menuToggle = document.getElementById('menuToggle');
 const mobileMenu = document.getElementById('mobileMenu');
 const navLinks = document.getElementById('navLinks');
