@@ -3,12 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Membres · Poble per a tothom</title>
+  <title>Mapa Interactiu · Poble per a tothom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estils.css">
 </head>
 
@@ -30,16 +29,15 @@
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Inici</a></li>
-        <li><a href="membres.html" class="active">Membres</a></li>
+        <li><a href="membres.html">Membres</a></li>
         <li><a href="index.html#propostes">Propostes</a></li>
-        <li><a href="mapa.html">Mapa Interactiu</a></li>
+        <li><a href="mapa.html" class="active">Mapa Interactiu</a></li>
         <li><a href="index.html#contacte">Contacte</a></li>
       </ul>
       <button id="themeToggle" class="nav-btn" aria-label="Canvia el tema de color">
         🌙
       </button>
     </nav>
-    <!-- menú mob x si un cas,-->
     <div class="mobile-menu" id="mobileMenu">
       <a href="index.html#context" class="mobile-link">Context</a>
       <a href="index.html#metode" class="mobile-link">Mètode</a>
@@ -51,46 +49,15 @@
     </div>
   </header>
 
-
   <main>
-    <section class="section team expand-hover" id="membres">
+    <section class="section" id="mapa-interactiu">
       <header class="section-header">
-        <h2>Membres de l'equip</h2>
-        <p>Equip encarregat de desenvolupar el projecte d’accessibilitat urbana al nucli del poble.</p>
+        <h2>Mapa Interactiu d'Accessibilitat</h2>
+        <p>Explora els diversos punts d'anàlisi i les propostes de millora sobre el mapa dels Pallaresos.</p>
       </header>
-
-      <div class="team-grid">
-        <article class="team-card">
-          <div class="team-photo">
-            <img src="img/Jaume.jpg" alt="Jaume">
-          </div>
-          <h3>Jaume Rius</h3>
-          <p class="team-role">Coordinador del projecte</p>
-        </article>
-
-        <article class="team-card">
-          <div class="team-photo">
-            <img src="img/Alex.png" alt="Alex">
-          </div>
-          <h3>Alex Sales</h3>
-          <p class="team-role">Responsable de treball de camp</p>
-        </article>
-
-        <article class="team-card">
-          <div class="team-photo">
-            <img src="img/Paola.png" alt="Paola">
-          </div>
-          <h3>Paola Vilagran</h3>
-          <p class="team-role">Dissenyadora gràfica i web</p>
-        </article>
-
-        <article class="team-card">
-          <div class="team-photo">
-            <img src="img/ger.png" alt="Gerard">
-          </div>
-          <h3>Gerard Salgado</h3>
-          <p class="team-role">Tècnic SIG</p>
-        </article>
+      
+      <div class="map-container" style="position: relative; width: 100%; height: 75vh; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-soft); box-shadow: var(--shadow-soft);">
+        <iframe src="mapa/index.html" style="width: 100%; height: 100%; border: none;" title="Mapa Interactiu QGIS"></iframe>
       </div>
     </section>
   </main>
